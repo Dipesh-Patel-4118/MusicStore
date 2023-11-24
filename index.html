@@ -1,53 +1,87 @@
 <html>
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body class="body">
-    <div class="main-page">
-        <img class="bgimg" src="imges/bgimg.png">
-        <div onclick="setMenu()" class="menu-box">
-            <img  class="menu-icon" src="imges/Menu.png">
+  <body class="body">
+    <div class="main-body">
+      <div class="main-bgimg">
+        <img class="bgimg" src="imges/bgimg.png" />
+      </div>
+
+      <div class="rec-img">
+        <div class="free-title">FREE GUITAR LESSONS!</div>
+        <br />
+        <div class="purchase-text">
+          Purchase any guitar over $499.99 and recievea<br />
+          one-hour guitar lesson free.
         </div>
-        
-        <div class="main-nav">
-            <div>
-                <img class="logo-img" src="imges/Desktop.png">
-            </div>
+        <br />
+        <div class="learn-button">LEARN MORE</div>
+      </div>
 
-            <div class="main-nav-text">
-                <a class="nav-text" href="#">Guitars</a>
-                <a class="nav-text" href="#">Accessories</a>
-                <a class="nav-text" href="#">Storage</a>
-                <a class="nav-text" href="#">Lessons</a>
-                <a class="nav-text" href="#">Repairs</a>
-            </div>
-
-            <div class="icon-box">
-                <img class="nav-icon1" src="imges/Vector.svg">
-                <div style="width: 20px;"></div>
-                <img class="nav-icon2" src="imges/user.svg">
-            </div>
-
+      <div class="main-nav">
+        <div class="logo-img">
+          <img src="imges/Desktop.png" />
         </div>
-        <div id="setshow" class="menu-column">
-            <a class="nav-text-1" href="#">Guitars</a>
-            <a class="nav-text-1" href="#">Accessories</a>
-            <a class="nav-text-1" href="#">Storage</a>
-            <a class="nav-text-1" href="#">Lessons</a>
-            <a class="nav-text-1" href="#">Repairs</a>
-
+        <div class="menu">
+          <a class="menu-text" href="#">Guitars</a>
+          <a class="menu-text" href="#">Accessories</a>
+          <a class="menu-text" href="#">Storage</a>
+          <a class="menu-text" href="#">Lessons</a>
+          <a class="menu-text" href="#">Repairs</a>
         </div>
+        <div class="menu-box">
+          <img class="menu-img" src="imges/Vector.svg" />
+          <div style="width: 10px"></div>
+          <img class="menu-img" src="imges/user.svg" />
+        </div>
+        <div class="menu-hideshow">
+          <img class="menu-img" src="imges/Menu.png" />
+        </div>
+      </div>
+      <div class="main-title-full">
+        Fullfilling dreams<br />
+        with strings <br />attached
+      </div>
+
+      <div class="sec-1">
+        <div class="sec1-rec"></div>
+        <div class="sec1-title">New Products</div>
+        <div class="main-card">
+          <div class="card1">
+            <img class="card1-img" src="imges/card1.png" />
+
+            <div class="title-text">
+              <h3 style="width: 100%; padding-bottom: 0px">Brand Name</h3>
+              <h3 style="float: right; padding-bottom: 0px">$2,995</h3>
+            </div>
+            <h6 class="product">Product description here</h6>
+            <div class="color-button">0 colors available</div>
+          </div>
+          <div class="card1">
+            <img class="card1-img" src="imges/card1.png" />
+
+            <div class="title-text">
+              <h3 style="width: 100%; padding-bottom: 0px">Brand Name</h3>
+              <h3 style="float: right; padding-bottom: 0px">$2,995</h3>
+            </div>
+            <h6 class="product">Product description here</h6>
+            <div class="color-button">0 colors available</div>
+          </div>
+          <div class="card1">
+            <img class="card1-img" src="imges/card1.png" />
+
+            <div class="title-text">
+              <h3 style="width: 100%; padding-bottom: 0px">Brand Name</h3>
+              <h3 style="float: right; padding-bottom: 0px">$2,995</h3>
+            </div>
+            <h6 class="product">Product description here</h6>
+            <div class="color-button">0 colors available</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-        function setMenu() {
-            document.getElementById("setshow");
-
-        }
-
-    </script>
-</body>
-</head>
-
+  </body>
 </html>

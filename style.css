@@ -1,154 +1,259 @@
 .body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
 
-.main-page {
-    flex-direction: column;
-
+.main-body {
+  flex-direction: column;
+  width: 100%;
 }
-
+.main-bgimg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
 .bgimg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
 }
-
-.logo-img {
-    color: white;
-    width: 255px;
-    height: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.rec-img {
+  position: absolute;
+  width: 80%;
+  top: 65%;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imges/rec.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ab0433;
 }
-
+.free-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.purchase-text {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+.learn-button {
+  background-color: rgb(218, 135, 27);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 40px;
+}
 .main-nav {
-    background-color: aqua;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 56px;
+  width: 80%;
+  height: 5%;
+  top: 55px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  position: absolute;
+}
+.main-title-full {
+  width: 80%;
+  top: 30%;
+  left: 10%;
+  color: white;
+  position: absolute;
+  font-size: 56px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  width: 100%;
+}
+.menu-text {
+  text-decoration: none;
+  color: white;
+  margin: 0px 24px;
+}
+.menu-box {
+  display: flex;
+  align-items: center;
+  right: 10%;
+}
+.menu-img {
+  height: 24px;
+  width: 24px;
+  padding: 8px;
+}
+.menu-hideshow {
+  display: none;
 }
 
-.main-nav-text {
-    flex-direction: row;
+.menu-img {
+  display: flex;
 }
 
-.nav-text {
-    position: relative;
-    align-items: self-start;
-    color: white;
-    text-decoration: none;
-    padding: 16px 16px;
-
+/* section-1 */
+.sec-1 {
+  flex-direction: column;
+  margin-top: 60px;
 }
-
-.icon-box {
-    display: flex;
+.sec1-title {
+  margin-top: 18px;
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  justify-content: center;
 }
-
-.nav-icon1 {
-    position: relative;
-    color: white;
+.sec1-rec {
+  background-color: brown;
+  display: flex;
+  width: 60px;
+  height: 4px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.nav-icon2 {
-    position: relative;
-    color: white;
+.main-card {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 30px;
 }
-
-.menu-icon {
-    color: white;
-    position: relative;
-    width: 20px;
-    height: 20px;
-    display: none;
+.card1 {
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 16px;
+  border-radius: 10px;
+  border: solid 1px #e7e7e7;
 }
-
-.menu-column {
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    background-color: antiquewhite;
+.title-text {
+  flex-direction: row;
+  display: flex;
+  padding: 16px 24px;
+  padding-bottom: 0px;
 }
-
-.nav-text-1 {
-    position: relative;
-    color: white;
-    display: none;
-    text-decoration: none;
+.card1-img {
+  background-color: #e7e7e7;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0px 40px;
 }
-
+.color-button {
+  background-color: #e9e9e9;
+  border-radius: 40px;
+  display: flex;
+  padding: 5px 0px;
+  width: 40%;
+  margin-left: 24px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #505050;
+}
+.product {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  margin-left: 24px;
+  padding-bottom: 30px;
+}
 
 /* mobile-view */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 568px) {
+  .menu {
+    display: none;
+  }
+  .menu-box {
+    display: none;
+  }
 
-    .icon-box {
-        display: none;
-    }
-
-    .main-nav-text {
-        flex-direction: column;
-        display: none;
-    }
-
-    .logo-img {
-        padding: 0px;
-        width: 255px;
-        height: 40px;
-    }
-
-    .bgimg {
-        display: block;
-    }
-
-    .menu-column {
-        display: block;
-        background-color: aqua;
-    }
-
-    .main-nav {
-        padding-top: 30px;
-    }
-
-    
+  .free-title {
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+  }
+  .main-title-full {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .bgimg {
+    height: 80%;
+  }
+  .purchase-text {
+    font-size: 10px;
+  }
+  .learn-button {
+    font-size: 10px;
+    padding: 10px 16px;
+  }
+  .logo-img {
+    display: flex;
+    height: 24px;
+    width: 100%;
+  }
+  .menu-hideshow {
+    display: flex;
+  }
+  .rec-img {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .menu-img {
+    width: 18px;
+    height: 18px;
+    padding: 5px;
+  }
+  .sec1-title {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  .sec1-rec {
+    width: 50px;
+    height: 3px;
+  }
 }
 
 /* tablet-view */
-@media screen and (max-width: 1024px) {
-
-    .icon-box {
-        display: none;
-    }
-
-    .main-nav-text {
-        flex-direction: column;
-        display: none;
-    }
-
-    .logo-img {
-        padding: 0px;
-        width: 255px;
-        height: 40px;
-    }
-
-    .bgimg {
-        display: block;
-    }
-
-    .menu-icon {
-        display: block;
-        float: right;
-        padding: 65px;
-    }
-
-    .menu-column {
-        display: block;
-        background-color: aqua;
-    }
-
-
+@media screen and (min-device-width: 568px) and (max-device-width: 1024px) {
+  .menu-box {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-hideshow {
+    display: block;
+  }
+  .logo-img {
+    width: 100%;
+  }
+  .rec-img {
+    top: 60%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .free-title {
+    font-size: 36px;
+  }
+  .main-title-full {
+    font-size: 35px;
+  }
+  .sec1-title {
+    margin-top: 10px;
+  }
+  .sec1-rec {
+    margin-top: 80px;
+    width: 250px;
+  }
 }
