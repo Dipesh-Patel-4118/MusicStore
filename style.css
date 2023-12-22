@@ -72,6 +72,7 @@
   right: 10%;
   display: flex;
   position: absolute;
+  text-align: center;
 }
 
 .main-title-full {
@@ -88,6 +89,7 @@
   align-items: center;
   margin-left: 24px;
   width: 100%;
+  text-align: center;
 }
 
 .menu-text {
@@ -182,13 +184,22 @@
   margin-top: 80px;
 }
 
+.main-card-3 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 80px;
+}
+
+
 .card1 {
   flex-direction: column;
   display: flex;
   width: auto;
   padding-bottom: 16px;
   border-radius: 10px;
-  border: solid 1px #e7e7e7;
+  border: solid 1px #bdbdbd;
 }
 
 .card2-1 {
@@ -198,7 +209,7 @@
   padding-bottom: 16px;
   border-radius: 10px;
   background-color: white;
-  border: solid 1px #e7e7e7;
+  border: solid 1px #cccbcb;
 }
 
 .title-text {
@@ -268,7 +279,7 @@
   margin: 0px;
   margin-left: 24px;
   padding-bottom: 30px;
-  color: white;
+  color: rgb(58, 57, 57);
 }
 
 .product-3-2 {
@@ -296,10 +307,12 @@
   width: auto;
   padding-bottom: 16px;
   border-radius: 10px;
-  border: solid 1px #e7e7e7;
+  border: solid 1px #c2c1c1;
   background-color: #EAEAEA;
 }
-
+.sec4-rec{
+  margin-top: 50px;
+}
 /* footer */
 .footer-des {
   padding: 8px 0px;
@@ -312,6 +325,7 @@
   align-items: end;
   padding: 50px 0px;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .white-line {
@@ -458,10 +472,22 @@
     padding: 0px 24px;
     width: 90%;
   }
+  .main-card-3 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0px 24px;
+    width: 90%;
+  }
 
   .card1 {
     width: 90%;
     margin-bottom: 24px;
+  }
+  .card2-1{
+    margin-top: 30px;
   }
 
   .card3-1 {
@@ -492,7 +518,7 @@
 
   .footer {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -504,15 +530,18 @@
     display: flex;
     margin-top: 0px;
   }
+
   .footer-img {
     display: none;
   }
+
   .footer-account {
     display: flex;
     align-items: center;
     margin: 0px;
   }
-  .footer-version{
+
+  .footer-version {
     display: flex;
     justify-content: center;
     padding-left: 0px;
@@ -554,9 +583,11 @@
   .sec1-title {
     margin-top: 10px;
   }
-
+.sec-1{
+  margin-top: 150px;
+}
   .sec1-rec {
-    margin-top: 80px;
+    margin-top: 100px;
     width: 250px;
     justify-content: center;
   }
@@ -579,9 +610,16 @@
     margin: 24px;
   }
 
+  .card2-1 {
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 24px;
+  }
+
   .main-card {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+
   }
 
   .sec-3-1 {
@@ -591,5 +629,30 @@
 
   .card3-1-img {
     padding: 0px;
+  }
+
+  .sec3-img1 {
+    flex-wrap: wrap;
+
+  }
+
+  .sec3-1 {
+    margin-top: 50px;
+  }
+
+  .main-card-3 {
+    background-size: cover;
+    width: 431px;
+    display: none;
+  }
+
+  .card4-2 {
+    margin-top: 50px;
+  }
+  .footer{
+    margin-top: 50px;
+  }
+  .sec3-img1{
+    margin-top: 10px;
   }
 }
