@@ -24,6 +24,8 @@
 
     <!-- Navbar -->
     <div class="main-nav">
+
+
       <div class="logo-img">
         <img src="imges/Desktop.png" />
       </div>
@@ -41,6 +43,17 @@
       </div>
       <div class="menu-hideshow">
         <img class="menu-img" src="imges/Menu.png" />
+
+
+
+        <!-- <div class="menuhide-text" id="setMenu" onclick="setMenu">
+          <a class="menu-text" href="#">Guitars</a>
+          <a class="menu-text" href="#">Accessories</a>
+          <a class="menu-text" href="#">Storage</a>
+          <a class="menu-text" href="#">Lessons</a>
+          <a class="menu-text" href="#">Repairs</a>
+        </div> -->
+
       </div>
     </div>
     <div class="main-title-full">
@@ -53,6 +66,8 @@
     <div class="sec-1">
       <div class="sec1-rec"></div>
       <div class="sec1-title">New Products</div>
+
+
       <div class="main-card-1">
 
         <div class="card1">
@@ -242,6 +257,21 @@
     </div>
 
   </div>
+
 </body>
+
+<script>
+
+  function setUp() {
+    document.getElementById("menu").onclick = setMenu;
+  }
+
+  function setMenu() {
+    var menuBox = document.getElementById("menu-box");
+    menuBox.className = "menuBox";
+  }
+
+  setUp();
+</script>
 
 </html>
